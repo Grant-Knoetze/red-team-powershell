@@ -1,5 +1,5 @@
 ﻿$shell = New-Object -ComObject WScript.Shell
-$destination = "C:\Users\amrth\Desktop\OurShortcut.lnk"
+$destination = "C:\Users\grant\Desktop\OurShortcut.lnk"
 $shortcut = $shell.CreateShortcut($destination)
 $shortcut.IconLocation = $shortcut.TargetPath + $shortcut.IconLocation
 $originalcmd = $shortcut.TargetPath + " " + $shortcut.Arguments
